@@ -37,8 +37,8 @@ $(document).ready(function() {
       url: 'https://restcountries.eu/rest/v1/alpha?codes=' + country,
       success: function(data) {
         //spit this out to website
-        $('#city').text(city + ', ' + region);
-        $('#country').text(data[0].name);
+        $('#city').html(city + ', ' + region);
+        $('#country').html(data[0].name);
       }
     });
   } //end displayLocation
